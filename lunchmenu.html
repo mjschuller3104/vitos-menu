@@ -1,56 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Vito's Trattoria – Lunch Menu</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    html,body{margin:0;background:#FCF8EB;font-family:Lato, Arial, sans-serif;}
-    #menusContainer{padding:0;}
+    html, body { margin: 0; padding: 0; background: #fdf9ea; }
   </style>
 </head>
 <body>
-
-  <div id="menusContainer"></div>
-
-  <!-- SinglePlatform loader (defines BusinessView) -->
-  <script src="https://menus.singleplatform.com/widget"></script>
-
-  <script>
-    var options = {};
-    /* Vito's colors */
-    options['PrimaryBackgroundColor']      = '#FCF8EB'; // off-white
-    options['MenuDescBackgroundColor']     = '#FCF8EB';
-    options['SectionTitleBackgroundColor'] = '#FCF8EB';
-    options['SectionDescBackgroundColor']  = '#FCF8EB';
-    options['ItemBackgroundColor']         = '#FCF8EB';
-
-    options['PrimaryFontFamily']           = 'Lato, Arial, sans-serif';
-    options['BaseFontSize']                = '16px';
-    options['FontCasing']                  = 'Default';
-
-    options['PrimaryFontColor']            = '#1A2C4E'; // navy
-    options['MenuDescFontColor']           = '#1A2C4E';
-    options['SectionTitleFontColor']       = '#8B2120'; // burgundy
-    options['SectionDescFontColor']        = '#1A2C4E';
-    options['ItemTitleFontColor']          = '#1A2C4E';
-    options['ItemDescFontColor']           = '#1A2C4E';
-    options['ItemPriceFontColor']          = '#1A2C4E';
-    options['FeedbackFontColor']           = '#1A2C4E';
-
-    /* Hide bits like your original */
-    options['HideDisplayOptionFeedback']   = 'true';
-    options['HideDisplayOptionDisclaimer'] = 'true';
-    options['HideDisplayOptionClaim']      = 'true';
-
-    /* Template & which menu to show */
-    options['MenuTemplate']                = '2';
-    options['DisplayMenu']                 = '5683975'; // <-- swap per page
-
-    new BusinessView("vitos-ny-trattoria", "menusContainer", options);
+  <script
+    data-display_menu="5683975"
+    data-base_font_size="14px"
+    data-item_background_color="#fdf9ea"
+    data-menu_desc_background_color="#fdf9ea"
+    data-primary_background_color="#fdf9ea"
+    data-primary_font_family="Arial"
+    data-section_desc_background_color="#fdf9ea"
+    data-section_title_background_color="#fdf9ea"
+    data-section_title_font_color="#6c0f12"
+    data-hide_announcements="true"
+    data-hide_cover_photo="true"
+    data-hide_disclaimer="true"
+    data-location="vitos-ny-trattoria"
+    data-api_key="ke09z8icq4xu8uiiccighy1bw"
+    id="singleplatform-menu"
+    src="https://menus.singleplatform.com/widget">
   </script>
 </body>
 </html>
-
-
